@@ -959,6 +959,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -967,10 +972,6 @@ video {
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-6xl{
-  font-size: 52px;
 }
 
 .text-lg{
@@ -986,11 +987,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -1063,10 +1059,10 @@ video {
 
 .background-circle {
   background-image: radial-gradient(
-    circle at center,
-    #e1e7f5 2px,
-    transparent 1px
-  );
+            circle at center,
+            #e1e7f5 2px,
+            transparent 1px
+    );
   background-size: 25px 25px;
 }
 
@@ -1103,7 +1099,7 @@ video {
   color: rgb(255 123 61 / var(--tw-text-opacity));
 }
 
-@keyframes fadeIn {
+@keyframes fadeInFromY {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -1182,7 +1178,7 @@ video {
 }
 
 .bubble-1 {
-  animation: fadeIn 1s ease-out 0s forwards;
+  animation: fadeInFromY 1s ease-out 0s forwards;
 }
 
 .interface-1 {
@@ -1190,7 +1186,7 @@ video {
 }
 
 .bubble-2 {
-  animation: fadeIn 1s ease-out 0.3s forwards;
+  animation: fadeInFromY 1s ease-out 0.3s forwards;
 }
 
 .interface-2 {
@@ -1281,12 +1277,12 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:mb-44{
-    margin-bottom: 11rem;
-  }
-
   .md\:mb-32{
     margin-bottom: 8rem;
+  }
+
+  .md\:mb-44{
+    margin-bottom: 11rem;
   }
 
   .md\:grid-cols-2{
@@ -1297,23 +1293,23 @@ video {
     padding: 3.5rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-6xl{
     font-size: 52px;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
