@@ -6,11 +6,13 @@ module.exports = {
       colors: {
         primary: "#FF7B3D", // Add this line
         dark_primary: "#ef3907",
+        light_primary: "#ffbb99",
         secondary: "#FFF1EB",
         tertiary: "#EBF0FA",
         title: "#2A3551",
         paragraph: "#445473",
-        light_paragraph: "#667799",
+        light_text: "#667799",
+        gray: "#E8E8E8",
       },
       boxShadow: {
         custom: "0 4px 24px rgba(19,19,93,.1)",
