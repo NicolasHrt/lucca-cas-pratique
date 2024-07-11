@@ -1,475 +1,475 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lucca - Cas pratique</title>
-    <link href="./css/output.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="./assets/favicon.svg" />
-    <script src="./js/script.js"></script>
-  </head>
-  <body>
-    <main>
-      <header
-        class="fixed right-1/2 z-[9999] w-full max-w-[1440px] translate-x-1/2 px-4"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucca - Cas pratique</title>
+  <link href="./css/output.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./assets/favicon.svg" />
+  <script src="./js/script.js"></script>
+</head>
+<body>
+<main>
+  <header
+    class="fixed right-1/2 z-[9999] w-full max-w-[1440px] translate-x-1/2 px-4"
+  >
+    <div
+      class="mt-6 flex items-center justify-between gap-8 rounded-xl bg-white p-4 shadow-custom"
+    >
+      <a href=""><img src="./assets/logo.svg" alt="" /></a>
+      <nav class="flex w-full items-center justify-between max-lg:hidden">
+        <ul class="flex gap-2 text-title">
+          <li class="p-2">
+            <a href="" class="flex items-center gap-2"
+            >Pourquoi Lucca ?<img src="./assets/icons/arrow.svg" alt=""
+            /></a>
+          </li>
+          <li class="group relative p-2">
+            <a href="" class="flex items-center gap-2 font-semibold"
+            >Solutions
+              <img
+                class="transition group-hover:rotate-180"
+                src="./assets/icons/arrow-bold.svg"
+                alt=""
+              /></a>
+            <div
+              class="absolute -left-20 top-10 hidden w-[350px] animate-fadeIn rounded-xl bg-white p-4 shadow-custom group-hover:block"
+            >
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
+                    href=""
+                  >Timmi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
+                    href=""
+                  >Poplee</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
+                    href=""
+                  >Pagga</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
+                    href=""
+                  >Cleemy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-2">
+            <a href="" class="flex items-center gap-2"
+            >Tarifs<img src="./assets/icons/arrow.svg" alt=""
+            /></a>
+          </li>
+          <li class="p-2">
+            <a href="" class="flex items-center gap-2"
+            >Partenariat<img src="./assets/icons/arrow.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+        <ul class="flex items-center gap-4">
+          <li class="flex items-center gap-1 text-paragraph">
+            <img src="./assets/icons/language.svg" alt="" />
+            <select name="language" id="">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+          <li class="text-sm font-semibold text-paragraph">
+            <a href="tel:+33185535874" class="flex items-center gap-1"
+            ><img src="./assets/icons/phone.svg" alt="" />+33 (0)1 85 53
+              58 74</a
+            >
+          </li>
+          <li class="text-sm font-semibold text-paragraph">
+            <a href="" class="flex items-center gap-1"
+            ><img src="./assets/icons/question.svg" alt="" />Support</a
+            >
+          </li>
+          <li>
+            <button class="btn btn-secondary">Connexion</button>
+          </li>
+          <li>
+            <button class="btn btn-primary">Contactez-nous</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="cursor-pointer lg:hidden">
+        <img src="https://www.lucca.fr/img/ico/ico-burger.svg" alt="" />
+      </div>
+    </div>
+  </header>
+
+  <section class="mb-20 px-8 pt-64 lg:mb-44">
+    <div class="relative mx-auto max-w-screen-xl text-center">
+      <div class="relative z-[10]">
+        <h1 class="mb-2 text-4xl font-extrabold text-title md:text-5xl">
+          L'humain a de la ressource
+        </h1>
+        <p class="mx-auto mb-4 max-w-lg text-xl text-paragraph md:text-2xl">
+          Réduire les tâches qui coûtent pour se consacrer à celles qui
+          comptent.
+        </p>
+        <button class="btn btn-primary">Demander une demo</button>
+      </div>
+      <div class="hero-images max-lg:hidden">
+        <img
+          class="bubble-1 absolute -left-10 -top-24"
+          src="./assets/bubble-hero-1.svg"
+          alt=""
+        />
+        <img
+          class="interface-1 absolute -left-10 -top-24"
+          src="./assets/interface-hero.svg"
+          alt=""
+        />
+        <img
+          class="interface-2 absolute right-8 top-10"
+          src="./assets/calendar-hero.svg"
+          alt=""
+        />
+        <img
+          class="bubble-2 absolute -right-20 top-0 z-[-1]"
+          src="./assets/bubble-hero-2.png"
+          alt=""
+        />
+        <img
+          class="character-1 absolute -top-24 left-64 z-[1]"
+          src="./assets/character-1.svg"
+          alt=""
+        />
+        <img
+          class="character-2 absolute left-56 top-32 z-[1]"
+          src="./assets/character-2.svg"
+          alt=""
+        />
+        <img
+          class="character-3 absolute -bottom-[86px] left-[276px] z-[1]"
+          src="./assets/character-3.svg"
+          alt=""
+        />
+        <img
+          class="character-4 absolute -top-14 right-8 z-[1]"
+          src="./assets/character-4.svg"
+          alt=""
+        />
+        <img
+          class="character-5 absolute -top-8 right-32 z-[1]"
+          src="./assets/character-5.svg"
+          alt=""
+        />
+        <img
+          class="character-6 absolute -right-2 top-32 z-[1]"
+          src="./assets/character-6.svg"
+          alt=""
+        />
+      </div>
+      <div class="hero-images relative mx-auto mt-16 max-w-sm lg:hidden">
+        <img class="interface-2" src="./assets/calendar-hero.svg" alt="" />
+        <img
+          class="bubble-2 absolute -right-4 -top-8 z-[-1]"
+          src="./assets/bubble-hero-2.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="relative mb-32 px-8 md:mb-44">
+    <div
+      class="background-circle absolute -bottom-16 right-1/2 z-[-1] h-[240px] w-full translate-x-1/2"
+    ></div>
+    <div class="mb-10 text-center">
+      <h2 class="mb-5 text-2xl font-extrabold text-title md:text-4xl">
+        Des <span class="highlight">solutions simples</span
+      ><br class="max-md:hidden" />
+        pour des besoins précis
+      </h2>
+      <p class="mx-auto mb-4 max-w-lg text-lg text-paragraph md:text-xl">
+        Les logiciels Lucca améliorent l'efficacité et l'engagement des
+        collaborateurs pour rendre les entreprises plus performantes.
+      </p>
+    </div>
+    <div
+      class="relative mx-auto max-w-[870px] overflow-hidden rounded-[32px] border border-gray bg-white p-8 md:p-14"
+    >
+      <div
+        class="absolute -right-8 -top-8 max-md:hidden lg:-right-2 lg:-top-2"
       >
-        <div
-          class="mt-6 flex items-center justify-between gap-8 rounded-xl bg-white p-4 shadow-custom"
-        >
-          <a href=""><img src="./assets/logo.svg" alt="" /></a>
-          <nav class="flex w-full items-center justify-between max-lg:hidden">
-            <ul class="flex gap-2 text-title">
-              <li class="p-2">
-                <a href="" class="flex items-center gap-2"
-                  >Pourquoi Lucca ?<img src="./assets/icons/arrow.svg" alt=""
-                /></a>
-              </li>
-              <li class="group relative p-2">
-                <a href="" class="flex items-center gap-2 font-semibold"
-                  >Solutions
-                  <img
-                    class="transition group-hover:rotate-180"
-                    src="./assets/icons/arrow-bold.svg"
-                    alt=""
-                /></a>
-                <div
-                  class="absolute -left-20 top-10 hidden w-[350px] animate-fadeIn rounded-xl bg-white p-4 shadow-custom group-hover:block"
-                >
-                  <ul class="space-y-3">
-                    <li>
-                      <a
-                        class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
-                        href=""
-                        >Timmi</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
-                        href=""
-                        >Poplee</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
-                        href=""
-                        >Pagga</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block rounded-xl p-4 font-bold transition hover:bg-tertiary"
-                        href=""
-                        >Cleemy</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="p-2">
-                <a href="" class="flex items-center gap-2"
-                  >Tarifs<img src="./assets/icons/arrow.svg" alt=""
-                /></a>
-              </li>
-              <li class="p-2">
-                <a href="" class="flex items-center gap-2"
-                  >Partenariat<img src="./assets/icons/arrow.svg" alt=""
-                /></a>
-              </li>
-            </ul>
-            <ul class="flex items-center gap-4">
-              <li class="flex items-center gap-1 text-paragraph">
-                <img src="./assets/icons/language.svg" alt="" />
-                <select name="language" id="">
-                  <option value="fr">FR</option>
-                  <option value="en">EN</option>
-                </select>
-              </li>
-              <li class="text-sm font-semibold text-paragraph">
-                <a href="tel:+33185535874" class="flex items-center gap-1"
-                  ><img src="./assets/icons/phone.svg" alt="" />+33 (0)1 85 53
-                  58 74</a
-                >
-              </li>
-              <li class="text-sm font-semibold text-paragraph">
-                <a href="" class="flex items-center gap-1"
-                  ><img src="./assets/icons/question.svg" alt="" />Support</a
-                >
-              </li>
-              <li>
-                <button class="btn btn-secondary">Connexion</button>
-              </li>
-              <li>
-                <button class="btn btn-primary">Contactez-nous</button>
-              </li>
-            </ul>
-          </nav>
-          <div class="cursor-pointer lg:hidden">
-            <img src="https://www.lucca.fr/img/ico/ico-burger.svg" alt="" />
+        <img src="./assets/bg-slider-timmi.svg" alt="" />
+      </div>
+      <div class="mb-8">
+        <h3 class="mb-3 text-2xl font-bold text-title md:text-4xl">
+          Temps et activités
+        </h3>
+        <p class="relative z-[10] text-paragraph">
+          Gérer les absences, les présences, les activités et le temps de
+          travail des collaborateurs.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-8 text-lg text-paragraph">
+        <div class="max-w-[180px]">
+          <div class="mb-3 flex items-center gap-2">
+            <img src="./assets/icons/timmi-absence.svg" alt="" />
+            <p>Timmi <strong>Absences</strong></p>
           </div>
-        </div>
-      </header>
-
-      <section class="mb-20 px-8 pt-64 lg:mb-44">
-        <div class="relative mx-auto max-w-screen-xl text-center">
-          <div class="relative z-[10]">
-            <h1 class="mb-2 text-4xl font-extrabold text-title md:text-5xl">
-              L'humain a de la ressource
-            </h1>
-            <p class="mx-auto mb-4 max-w-lg text-xl text-paragraph md:text-2xl">
-              Réduire les tâches qui coûtent pour se consacrer à celles qui
-              comptent.
-            </p>
-            <button class="btn btn-primary">Demander une demo</button>
-          </div>
-          <div class="hero-images max-lg:hidden">
-            <img
-              class="bubble-1 absolute -left-10 -top-24"
-              src="./assets/bubble-hero-1.svg"
-              alt=""
-            />
-            <img
-              class="interface-1 absolute -left-10 -top-24"
-              src="./assets/interface-hero.svg"
-              alt=""
-            />
-            <img
-              class="interface-2 absolute right-8 top-10"
-              src="./assets/calendar-hero.svg"
-              alt=""
-            />
-            <img
-              class="bubble-2 absolute -right-20 top-0 z-[-1]"
-              src="./assets/bubble-hero-2.png"
-              alt=""
-            />
-            <img
-              class="character-1 absolute -top-24 left-64 z-[1]"
-              src="./assets/character-1.svg"
-              alt=""
-            />
-            <img
-              class="character-2 absolute left-56 top-32 z-[1]"
-              src="./assets/character-2.svg"
-              alt=""
-            />
-            <img
-              class="character-3 absolute -bottom-[86px] left-[276px] z-[1]"
-              src="./assets/character-3.svg"
-              alt=""
-            />
-            <img
-              class="character-4 absolute -top-14 right-8 z-[1]"
-              src="./assets/character-4.svg"
-              alt=""
-            />
-            <img
-              class="character-5 absolute -top-8 right-32 z-[1]"
-              src="./assets/character-5.svg"
-              alt=""
-            />
-            <img
-              class="character-6 absolute -right-2 top-32 z-[1]"
-              src="./assets/character-6.svg"
-              alt=""
-            />
-          </div>
-          <div class="hero-images relative mx-auto mt-16 max-w-sm lg:hidden">
-            <img class="interface-2" src="./assets/calendar-hero.svg" alt="" />
-            <img
-              class="bubble-2 absolute -right-4 -top-8 z-[-1]"
-              src="./assets/bubble-hero-2.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="relative mb-32 px-8 md:mb-44">
-        <div
-          class="background-circle absolute -bottom-16 right-1/2 z-[-1] h-[240px] w-full translate-x-1/2"
-        ></div>
-        <div class="mb-10 text-center">
-          <h2 class="mb-5 text-2xl font-extrabold text-title md:text-4xl">
-            Des <span class="highlight">solutions simples</span
-            ><br class="max-md:hidden" />
-            pour des besoins précis
-          </h2>
-          <p class="mx-auto mb-4 max-w-lg text-lg text-paragraph md:text-xl">
-            Les logiciels Lucca améliorent l'efficacité et l'engagement des
-            collaborateurs pour rendre les entreprises plus performantes.
+          <p class="text-sm">
+            Une gestion simple et efficace des congés et des arrêts de
+            travail
           </p>
         </div>
-        <div
-          class="relative mx-auto max-w-[860px] overflow-hidden rounded-[32px] border border-gray bg-white p-8 md:p-14"
-        >
-          <div
-            class="absolute -right-8 -top-8 max-md:hidden lg:-right-2 lg:-top-2"
-          >
-            <img src="./assets/bg-slider-timmi.svg" alt="" />
-          </div>
-          <div class="mb-8">
-            <h3 class="mb-3 text-2xl font-bold text-title md:text-4xl">
-              Temps et activités
-            </h3>
-            <p class="relative z-[10] text-paragraph">
-              Gérer les absences, les présences, les activités et le temps de
-              travail des collaborateurs.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-8 text-lg text-paragraph">
-            <div class="max-w-[180px]">
-              <div class="mb-3 flex items-center gap-2">
-                <img src="./assets/icons/timmi-absence.svg" alt="" />
-                <p>Timmi <strong>Absences</strong></p>
-              </div>
-              <p class="text-sm">
-                Une gestion simple et efficace des congés et des arrêts de
-                travail
-              </p>
-            </div>
 
-            <div class="max-w-[180px]">
-              <div class="mb-3 flex items-center gap-2">
-                <img src="./assets/icons/timmi-temps.svg" alt="" />
-                <p>Timmi <strong>Temps</strong></p>
-              </div>
-              <p class="text-sm">
-                Le suivi des temps de travail et des heures supplémentaires
-                automatisés
-              </p>
-            </div>
-
-            <div class="max-w-[180px]">
-              <div class="mb-3 flex items-center gap-2">
-                <img src="./assets/icons/timmi-office.svg" alt="" />
-                <p>Timmi <strong>Office</strong></p>
-              </div>
-              <p class="text-sm">L'outil des organisations hybrides</p>
-            </div>
+        <div class="max-w-[180px]">
+          <div class="mb-3 flex items-center gap-2">
+            <img src="./assets/icons/timmi-temps.svg" alt="" />
+            <p>Timmi <strong>Temps</strong></p>
           </div>
-        </div>
-      </section>
-
-      <section class="mb-32 px-8 md:mb-44">
-        <div class="mb-10 text-center">
-          <h2 class="mb-5 text-2xl font-extrabold text-title md:text-4xl">
-            Des solutions pensées pour
-            <span class="highlight">ceux qui les</span
-            ><br class="max-lg:hidden" />
-            <span class="highlight">utilisent</span>, pas ceux qui les achètent
-          </h2>
-          <p class="mx-auto mb-4 text-lg text-paragraph md:text-xl">
-            À l'accumulation de fonctionnalités, nous préférons l'intérêt de
-            l'utilisateur final.
+          <p class="text-sm">
+            Le suivi des temps de travail et des heures supplémentaires
+            automatisés
           </p>
         </div>
-        <div class="relative mx-auto max-w-[900px] text-paragraph">
-          <div class="absolute -bottom-32 -right-60 z-[-1] max-xl:hidden">
-            <img src="./assets/bubble-characters.svg" alt="" />
-          </div>
-          <div class="grid gap-8 md:grid-cols-2">
-            <div class="rounded-2xl border border-gray bg-white p-4">
-              <div class="flex items-start gap-4">
-                <img src="./assets/icons/collaborateurs.svg" alt="" />
-                <div>
-                  <h3 class="text-lg font-bold md:text-2xl">
-                    Les collaborateurs
-                  </h3>
-                  <p>
-                    Des solutions pour simplifier la gestion administrative
-                    professionnelle et reprendre la main sur son évolution de
-                    carrière
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rounded-2xl border border-gray bg-white p-4">
-              <div class="flex items-start gap-4">
-                <img src="./assets/icons/managers.svg" alt="" />
-                <div>
-                  <h3 class="text-lg font-bold md:text-2xl">Les managers</h3>
-                  <p>
-                    Des solutions pour améliorer la qualité des échanges
-                    managériaux et se consacrer au développement de leur
-                    collaborateurs
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rounded-2xl border border-gray bg-white p-4">
-              <div class="flex items-start gap-4">
-                <img src="./assets/icons/daf.svg" alt="" />
-                <div>
-                  <h3 class="text-lg font-bold md:text-2xl">DAF</h3>
-                  <p>
-                    Des solutions pour contrôler et suivre efficacement les
-                    dépenses de l'entreprise et des collaborateurs
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rounded-2xl border border-gray bg-white p-4">
-              <div class="flex items-start gap-4">
-                <img src="./assets/icons/rh.svg" alt="" />
-                <div>
-                  <h3 class="text-lg font-bold md:text-2xl">RH</h3>
-                  <p>
-                    Des solutions pour automatiser les processus administratifs
-                    et aligner les sujets RH avec les enjeux stratégiques des
-                    entreprises
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="mb-20 px-8 md:mb-32">
-        <div class="mb-10 text-center">
-          <h2 class="mb-5 text-2xl font-extrabold text-title lg:text-4xl">
-            Des solutions <span class="highlight">éprouvées</span>
-          </h2>
-        </div>
-        <div
-          class="mx-auto flex w-full max-w-[1100px] items-center justify-between gap-10 max-md:flex-col"
-        >
-          <div>
-            <img src="./assets/ipad.svg" alt="" />
+        <div class="max-w-[180px]">
+          <div class="mb-3 flex items-center gap-2">
+            <img src="./assets/icons/timmi-office.svg" alt="" />
+            <p>Timmi <strong>Office</strong></p>
           </div>
-          <div
-            class="background-circle grid w-full max-w-xl gap-2 gap-y-20 py-16 text-title sm:grid-cols-2 sm:gap-y-36"
+          <p class="text-sm">L'outil des organisations hybrides</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-32 px-8 md:mb-44">
+    <div class="mb-10 text-center">
+      <h2 class="mb-5 text-2xl font-extrabold text-title md:text-4xl">
+        Des solutions pensées pour
+        <span class="highlight">ceux qui les</span
+        ><br class="max-lg:hidden" />
+        <span class="highlight">utilisent</span>, pas ceux qui les achètent
+      </h2>
+      <p class="mx-auto mb-4 text-lg text-paragraph md:text-xl">
+        À l'accumulation de fonctionnalités, nous préférons l'intérêt de
+        l'utilisateur final.
+      </p>
+    </div>
+    <div class="relative mx-auto max-w-[900px] text-paragraph">
+      <div class="absolute -bottom-32 -right-60 z-[-1] max-xl:hidden">
+        <img src="./assets/bubble-characters.svg" alt="" />
+      </div>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="rounded-2xl border border-gray bg-white p-4">
+          <div class="flex items-start gap-4">
+            <img src="./assets/icons/collaborateurs.svg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold md:text-2xl">
+                Les collaborateurs
+              </h3>
+              <p>
+                Des solutions pour simplifier la gestion administrative
+                professionnelle et reprendre la main sur son évolution de
+                carrière
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray bg-white p-4">
+          <div class="flex items-start gap-4">
+            <img src="./assets/icons/managers.svg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold md:text-2xl">Les managers</h3>
+              <p>
+                Des solutions pour améliorer la qualité des échanges
+                managériaux et se consacrer au développement de leur
+                collaborateurs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray bg-white p-4">
+          <div class="flex items-start gap-4">
+            <img src="./assets/icons/daf.svg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold md:text-2xl">DAF</h3>
+              <p>
+                Des solutions pour contrôler et suivre efficacement les
+                dépenses de l'entreprise et des collaborateurs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray bg-white p-4">
+          <div class="flex items-start gap-4">
+            <img src="./assets/icons/rh.svg" alt="" />
+            <div>
+              <h3 class="text-lg font-bold md:text-2xl">RH</h3>
+              <p>
+                Des solutions pour automatiser les processus administratifs
+                et aligner les sujets RH avec les enjeux stratégiques des
+                entreprises
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-20 px-8 md:mb-32">
+    <div class="mb-10 text-center">
+      <h2 class="mb-5 text-2xl font-extrabold text-title lg:text-4xl">
+        Des solutions <span class="highlight">éprouvées</span>
+      </h2>
+    </div>
+    <div
+      class="mx-auto flex w-full max-w-[1100px] items-center justify-between gap-10 max-md:flex-col"
+    >
+      <div>
+        <img src="./assets/ipad.svg" alt="" />
+      </div>
+      <div
+        class="background-circle grid w-full max-w-xl gap-2 gap-y-20 py-16 text-title sm:grid-cols-2 sm:gap-y-36"
+      >
+        <div class="text-center">
+          <p class="text-3xl font-bold md:text-6xl">+ 830 000</p>
+          <p class="text-xl md:text-2xl">utilisateurs</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold md:text-6xl">130</p>
+          <p class="text-xl md:text-2xl">pays</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold md:text-6xl">42%</p>
+          <p class="text-xl md:text-2xl">croissance en 2023</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold md:text-6xl">+ 600</p>
+          <p class="text-xl md:text-2xl">collaborateurs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative bg-tertiary px-8 py-16">
+    <div class="absolute bottom-0 max-lg:hidden">
+      <img src="./assets/faq-image.svg" alt="" />
+    </div>
+    <div
+      class="mx-auto max-w-[680px] cursor-pointer space-y-12 text-light_text"
+    >
+      <div>
+        <div class="faq-question flex items-center gap-3">
+          <button
+            class="faq-cross flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary transition duration-500"
           >
-            <div class="text-center">
-              <p class="text-3xl font-bold md:text-6xl">+ 830 000</p>
-              <p class="text-xl md:text-2xl">utilisateurs</p>
-            </div>
-            <div class="text-center">
-              <p class="text-3xl font-bold md:text-6xl">130</p>
-              <p class="text-xl md:text-2xl">pays</p>
-            </div>
-            <div class="text-center">
-              <p class="text-3xl font-bold md:text-6xl">42%</p>
-              <p class="text-xl md:text-2xl">croissance en 2023</p>
-            </div>
-            <div class="text-center">
-              <p class="text-3xl font-bold md:text-6xl">+ 600</p>
-              <p class="text-xl md:text-2xl">collaborateurs</p>
-            </div>
+            <img src="./assets/icons/cross.svg" alt="" />
+          </button>
+          <div>
+            <p class="text-xl">Pourquoi vous équiper de logiciels RH ?</p>
           </div>
-        </div>
-      </section>
-
-      <section class="relative bg-tertiary px-8 py-16">
-        <div class="absolute bottom-0 max-lg:hidden">
-          <img src="./assets/faq-image.svg" alt="" />
         </div>
         <div
-          class="mx-auto max-w-[680px] cursor-pointer space-y-12 text-light_text"
+          class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
         >
+          <p class="text-lg font-bold">
+            Quels avantages peut-on légitimement attendre d'un logiciel RH ?
+          </p>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            eget risus in nunc luctus fermentum. Nullam
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="faq-question flex items-center gap-3">
+          <button
+            class="faq-cross flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary transition duration-500"
+          >
+            <img src="./assets/icons/cross.svg" alt="" />
+          </button>
           <div>
-            <div class="faq-question flex items-center gap-3">
-              <button
-                class="faq-cross flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary transition duration-500"
-              >
-                <img src="./assets/icons/cross.svg" alt="" />
-              </button>
-              <div>
-                <p class="text-xl">Pourquoi vous équiper de logiciels RH ?</p>
-              </div>
-            </div>
-            <div
-              class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
-            >
-              <p class="text-lg font-bold">
-                Quels avantages peut-on légitimement attendre d'un logiciel RH ?
-              </p>
-              <p class="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                eget risus in nunc luctus fermentum. Nullam
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="faq-question flex items-center gap-3">
-              <button
-                class="faq-cross flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary transition duration-500"
-              >
-                <img src="./assets/icons/cross.svg" alt="" />
-              </button>
-              <div>
-                <p class="text-xl">
-                  Quel est le ROI d'une suite de logiciels RH ?
-                </p>
-              </div>
-            </div>
-            <div
-              class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
-            >
-              <p class="text-lg font-bold">
-                Quels avantages peut-on légitimement attendre d'un logiciel RH ?
-              </p>
-              <p class="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                eget risus in nunc luctus fermentum. Nullam
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="faq-question flex items-center gap-3">
-              <button
-                class="faq-cross flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary transition duration-500"
-              >
-                <img src="./assets/icons/cross.svg" alt="" />
-              </button>
-              <div>
-                <p class="text-xl">
-                  Comment choisir une suite de logiciels RH ?
-                </p>
-              </div>
-            </div>
-            <div
-              class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
-            >
-              <p class="text-lg font-bold">
-                Quels avantages peut-on légitimement attendre d'un logiciel RH ?
-              </p>
-              <p class="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                eget risus in nunc luctus fermentum. Nullam
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="faq-question flex items-center gap-3">
-              <button
-                class="faq-cross flex h-10 w-10 shrink-0 flex-nowrap items-center justify-center rounded-lg bg-primary transition duration-500"
-              >
-                <img src="./assets/icons/cross.svg" alt="" />
-              </button>
-              <div>
-                <p class="text-xl">
-                  Quels sont les différents logiciels RH qui existent sur le
-                  marché ?
-                </p>
-              </div>
-            </div>
-            <div
-              class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
-            >
-              <p class="text-lg font-bold">
-                Quels avantages peut-on légitimement attendre d'un logiciel RH ?
-              </p>
-              <p class="mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                eget risus in nunc luctus fermentum. Nullam
-              </p>
-            </div>
+            <p class="text-xl">
+              Quel est le ROI d'une suite de logiciels RH ?
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+        <div
+          class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
+        >
+          <p class="text-lg font-bold">
+            Quels avantages peut-on légitimement attendre d'un logiciel RH ?
+          </p>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            eget risus in nunc luctus fermentum. Nullam
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="faq-question flex items-center gap-3">
+          <button
+            class="faq-cross flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary transition duration-500"
+          >
+            <img src="./assets/icons/cross.svg" alt="" />
+          </button>
+          <div>
+            <p class="text-xl">
+              Comment choisir une suite de logiciels RH ?
+            </p>
+          </div>
+        </div>
+        <div
+          class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
+        >
+          <p class="text-lg font-bold">
+            Quels avantages peut-on légitimement attendre d'un logiciel RH ?
+          </p>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            eget risus in nunc luctus fermentum. Nullam
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="faq-question flex items-center gap-3">
+          <button
+            class="faq-cross flex h-10 w-10 shrink-0 flex-nowrap items-center justify-center rounded-lg bg-primary transition duration-500"
+          >
+            <img src="./assets/icons/cross.svg" alt="" />
+          </button>
+          <div>
+            <p class="text-xl">
+              Quels sont les différents logiciels RH qui existent sur le
+              marché ?
+            </p>
+          </div>
+        </div>
+        <div
+          class="faq-answer mt-2 max-h-0 overflow-hidden pl-[52px] transition-all duration-500"
+        >
+          <p class="text-lg font-bold">
+            Quels avantages peut-on légitimement attendre d'un logiciel RH ?
+          </p>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            eget risus in nunc luctus fermentum. Nullam
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
 </html>
